@@ -8,6 +8,7 @@ target 'Schwifty-Networking' do
   pod 'SwiftLint'
   pod 'Alamofire', '~> 4.7'
   pod 'PromiseKit', '~> 6.4'
+  pod 'PromiseKit/Alamofire', '~> 6.0'
   pod 'RxCocoa', '~> 4.2'
   pod 'RxSwift', '~> 4.2'
   pod 'RxAlamofire', '~> 4.2'

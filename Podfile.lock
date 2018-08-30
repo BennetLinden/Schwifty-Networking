@@ -4,6 +4,9 @@ PODS:
     - PromiseKit/CorePromise (= 6.4.0)
     - PromiseKit/Foundation (= 6.4.0)
     - PromiseKit/UIKit (= 6.4.0)
+  - PromiseKit/Alamofire (6.4.0):
+    - Alamofire (~> 4.0)
+    - PromiseKit/CorePromise
   - PromiseKit/CorePromise (6.4.0)
   - PromiseKit/Foundation (6.4.0):
     - PromiseKit/CorePromise
@@ -22,6 +25,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 4.7)
   - PromiseKit (~> 6.4)
+  - PromiseKit/Alamofire (~> 6.0)
   - RxAlamofire (~> 4.2)
   - RxCocoa (~> 4.2)
   - RxSwift (~> 4.2)
@@ -44,6 +48,6 @@ SPEC CHECKSUMS:
   RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
 
-PODFILE CHECKSUM: 17c3212107e8b5b535f4e5018c07d2ff7369a194
+PODFILE CHECKSUM: d3436863c8235ce804fd8c180c2f0ddcbee7a6bc
 
 COCOAPODS: 1.5.3

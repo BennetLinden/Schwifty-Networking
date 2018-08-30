@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		555571CE21383AA1007953E4 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555571C721383AA1007953E4 /* Requestable.swift */; };
+		555571CF21383AA2007953E4 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555571C821383AA1007953E4 /* RequestBuilder.swift */; };
+		555571D021383AA2007953E4 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555571C921383AA1007953E4 /* Route.swift */; };
+		555571D121383AA2007953E4 /* RemoteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555571CB21383AA1007953E4 /* RemoteAPI.swift */; };
+		555571D221383AA2007953E4 /* RickAndMortyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555571CC21383AA1007953E4 /* RickAndMortyAPI.swift */; };
+		555571D4213844C2007953E4 /* ResultsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555571D3213844C2007953E4 /* ResultsResponse.swift */; };
+		555571D7213845EE007953E4 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555571D6213845EE007953E4 /* Character.swift */; };
 		55A25E522138369900F1C733 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A25E512138369900F1C733 /* AppDelegate.swift */; };
 		55A25E542138369900F1C733 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A25E532138369900F1C733 /* ViewController.swift */; };
 		55A25E592138369A00F1C733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55A25E582138369A00F1C733 /* Assets.xcassets */; };
@@ -16,6 +23,13 @@
 
 /* Begin PBXFileReference section */
 		1DB99AE62F46D9045DB266A6 /* Pods_Schwifty_Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Schwifty_Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		555571C721383AA1007953E4 /* Requestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
+		555571C821383AA1007953E4 /* RequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		555571C921383AA1007953E4 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		555571CB21383AA1007953E4 /* RemoteAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteAPI.swift; sourceTree = "<group>"; };
+		555571CC21383AA1007953E4 /* RickAndMortyAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RickAndMortyAPI.swift; sourceTree = "<group>"; };
+		555571D3213844C2007953E4 /* ResultsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsResponse.swift; sourceTree = "<group>"; };
+		555571D6213845EE007953E4 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		55A25E4E2138369900F1C733 /* Schwifty-Networking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Schwifty-Networking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55A25E512138369900F1C733 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55A25E532138369900F1C733 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +61,51 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		555571C321383AA1007953E4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				555571CA21383AA1007953E4 /* Remote */,
+				555571C621383AA1007953E4 /* Request */,
+				555571C421383AA1007953E4 /* Response */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		555571C421383AA1007953E4 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				555571D3213844C2007953E4 /* ResultsResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		555571C621383AA1007953E4 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				555571C821383AA1007953E4 /* RequestBuilder.swift */,
+				555571C721383AA1007953E4 /* Requestable.swift */,
+				555571C921383AA1007953E4 /* Route.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		555571CA21383AA1007953E4 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				555571CB21383AA1007953E4 /* RemoteAPI.swift */,
+				555571CC21383AA1007953E4 /* RickAndMortyAPI.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		555571D5213845CD007953E4 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				555571D6213845EE007953E4 /* Character.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		55A25E452138369900F1C733 = {
 			isa = PBXGroup;
 			children = (
@@ -69,10 +128,12 @@
 			isa = PBXGroup;
 			children = (
 				55A25E512138369900F1C733 /* AppDelegate.swift */,
-				55A25E532138369900F1C733 /* ViewController.swift */,
+				55A25E5D2138369A00F1C733 /* Info.plist */,
 				55A25E582138369A00F1C733 /* Assets.xcassets */,
 				55A25E5A2138369A00F1C733 /* LaunchScreen.storyboard */,
-				55A25E5D2138369A00F1C733 /* Info.plist */,
+				55A25E532138369900F1C733 /* ViewController.swift */,
+				555571D5213845CD007953E4 /* Data */,
+				555571C321383AA1007953E4 /* Network */,
 			);
 			path = "Schwifty-Networking";
 			sourceTree = "<group>";
@@ -219,6 +280,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				555571D7213845EE007953E4 /* Character.swift in Sources */,
+				555571CF21383AA2007953E4 /* RequestBuilder.swift in Sources */,
+				555571D4213844C2007953E4 /* ResultsResponse.swift in Sources */,
+				555571D221383AA2007953E4 /* RickAndMortyAPI.swift in Sources */,
+				555571CE21383AA1007953E4 /* Requestable.swift in Sources */,
+				555571D021383AA2007953E4 /* Route.swift in Sources */,
+				555571D121383AA2007953E4 /* RemoteAPI.swift in Sources */,
 				55A25E542138369900F1C733 /* ViewController.swift in Sources */,
 				55A25E522138369900F1C733 /* AppDelegate.swift in Sources */,
 			);
