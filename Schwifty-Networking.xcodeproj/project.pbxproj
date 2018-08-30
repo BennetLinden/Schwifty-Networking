@@ -9,19 +9,21 @@
 /* Begin PBXBuildFile section */
 		55A25E522138369900F1C733 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A25E512138369900F1C733 /* AppDelegate.swift */; };
 		55A25E542138369900F1C733 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A25E532138369900F1C733 /* ViewController.swift */; };
-		55A25E572138369900F1C733 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55A25E552138369900F1C733 /* Main.storyboard */; };
 		55A25E592138369A00F1C733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55A25E582138369A00F1C733 /* Assets.xcassets */; };
 		55A25E5C2138369A00F1C733 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55A25E5A2138369A00F1C733 /* LaunchScreen.storyboard */; };
+		D8CABD2C4CDF4AAF0F9B5A1A /* Pods_Schwifty_Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DB99AE62F46D9045DB266A6 /* Pods_Schwifty_Networking.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DB99AE62F46D9045DB266A6 /* Pods_Schwifty_Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Schwifty_Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55A25E4E2138369900F1C733 /* Schwifty-Networking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Schwifty-Networking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55A25E512138369900F1C733 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55A25E532138369900F1C733 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		55A25E562138369900F1C733 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55A25E582138369A00F1C733 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55A25E5B2138369A00F1C733 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55A25E5D2138369A00F1C733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		599FE3C6DCE9BA4209A413F3 /* Pods-Schwifty-Networking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Schwifty-Networking.release.xcconfig"; path = "Pods/Target Support Files/Pods-Schwifty-Networking/Pods-Schwifty-Networking.release.xcconfig"; sourceTree = "<group>"; };
+		DDACDA698C50EB7092E3555F /* Pods-Schwifty-Networking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Schwifty-Networking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Schwifty-Networking/Pods-Schwifty-Networking.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +31,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8CABD2C4CDF4AAF0F9B5A1A /* Pods_Schwifty_Networking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D65B14A5885CC316067DDB2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDACDA698C50EB7092E3555F /* Pods-Schwifty-Networking.debug.xcconfig */,
+				599FE3C6DCE9BA4209A413F3 /* Pods-Schwifty-Networking.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		55A25E452138369900F1C733 = {
 			isa = PBXGroup;
 			children = (
 				55A25E502138369900F1C733 /* Schwifty-Networking */,
 				55A25E4F2138369900F1C733 /* Products */,
+				2D65B14A5885CC316067DDB2 /* Pods */,
+				B637FA52A2B8D6F471A548B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +70,19 @@
 			children = (
 				55A25E512138369900F1C733 /* AppDelegate.swift */,
 				55A25E532138369900F1C733 /* ViewController.swift */,
-				55A25E552138369900F1C733 /* Main.storyboard */,
 				55A25E582138369A00F1C733 /* Assets.xcassets */,
 				55A25E5A2138369A00F1C733 /* LaunchScreen.storyboard */,
 				55A25E5D2138369A00F1C733 /* Info.plist */,
 			);
 			path = "Schwifty-Networking";
+			sourceTree = "<group>";
+		};
+		B637FA52A2B8D6F471A548B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DB99AE62F46D9045DB266A6 /* Pods_Schwifty_Networking.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +92,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55A25E602138369A00F1C733 /* Build configuration list for PBXNativeTarget "Schwifty-Networking" */;
 			buildPhases = (
+				914A308E7BE1EC3CF2350B29 /* [CP] Check Pods Manifest.lock */,
 				55A25E4A2138369900F1C733 /* Sources */,
 				55A25E4B2138369900F1C733 /* Frameworks */,
 				55A25E4C2138369900F1C733 /* Resources */,
+				53AFD7630D9ED7335E9E7881 /* [CP] Embed Pods Frameworks */,
+				55A25E63213836EE00F1C733 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -124,11 +148,71 @@
 			files = (
 				55A25E5C2138369A00F1C733 /* LaunchScreen.storyboard in Resources */,
 				55A25E592138369A00F1C733 /* Assets.xcassets in Resources */,
-				55A25E572138369900F1C733 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53AFD7630D9ED7335E9E7881 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Schwifty-Networking/Pods-Schwifty-Networking-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Schwifty-Networking/Pods-Schwifty-Networking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55A25E63213836EE00F1C733 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint autocorrect\n${PODS_ROOT}/SwiftLint/swiftlint";
+		};
+		914A308E7BE1EC3CF2350B29 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Schwifty-Networking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		55A25E4A2138369900F1C733 /* Sources */ = {
@@ -143,14 +227,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		55A25E552138369900F1C733 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				55A25E562138369900F1C733 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		55A25E5A2138369A00F1C733 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -278,6 +354,7 @@
 		};
 		55A25E612138369A00F1C733 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDACDA698C50EB7092E3555F /* Pods-Schwifty-Networking.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +373,7 @@
 		};
 		55A25E622138369A00F1C733 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 599FE3C6DCE9BA4209A413F3 /* Pods-Schwifty-Networking.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
