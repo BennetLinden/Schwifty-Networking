@@ -9,17 +9,16 @@
 import Foundation
 
 struct Character: Codable, Equatable {
-    
+
     let id: Int
     let name: String
     let status: String
     let species: String
     let type: String?
-    let gender: String
     let imageURL: URL
-    
+
     enum CodingKeys: String, CodingKey {
-        case id, name, status, species, type, gender
+        case id, name, status, species, type
         case imageURL = "image"
     }
 }

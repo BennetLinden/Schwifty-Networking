@@ -131,9 +131,9 @@
 				55A25E5D2138369A00F1C733 /* Info.plist */,
 				55A25E582138369A00F1C733 /* Assets.xcassets */,
 				55A25E5A2138369A00F1C733 /* LaunchScreen.storyboard */,
-				55A25E532138369900F1C733 /* ViewController.swift */,
 				555571D5213845CD007953E4 /* Data */,
 				555571C321383AA1007953E4 /* Network */,
+				55A25E532138369900F1C733 /* ViewController.swift */,
 			);
 			path = "Schwifty-Networking";
 			sourceTree = "<group>";
